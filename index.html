@@ -19,6 +19,7 @@
       <a class="brand" href="#" aria-label="Home">lv<span>.</span></a>
       <nav aria-label="Main navigation">
         <a class="optional" href="#about">About</a>
+        <a class="optional" href="#projects">Projects</a>
         <a href="#contact">Say hello ↗</a>
         <button class="theme" id="theme-toggle" type="button" aria-label="Switch to light mode">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -96,11 +97,58 @@
           <button type="button" class="small-button" id="reset-goals">Reset checklist</button>
         </div>
       </section>
+      <section class="content" id="skills" aria-labelledby="skills-heading">
+        <h2 class="section-label" id="skills-heading"><span>04</span>Learning toolkit</h2>
+        <div>
+          <p class="helper">A starter learning plan. Make this list your own.</p>
+          <div class="skill-row"><h3>HTML</h3><p>Give ideas a structure with meaningful headings, links, and accessible content.</p><span class="tag">Structure</span></div>
+          <div class="skill-row"><h3>CSS</h3><p>Explore typography, responsive layouts, and the details that make a page feel right.</p><span class="tag">Design</span></div>
+          <div class="skill-row"><h3>JavaScript</h3><p>Turn a static page into something visitors can explore and interact with.</p><span class="tag">Interaction</span></div>
+        </div>
+      </section>
+      <section class="content" id="projects" aria-labelledby="projects-heading">
+        <h2 class="section-label" id="projects-heading"><span>05</span>Project notebook</h2>
+        <div>
+          <p class="helper">Three ideas to try next. Open an idea to explore the brief.</p>
+          <details class="project" open>
+            <summary><span><span class="project-kind">01 / Personal</span><strong>A home on the web</strong></span><span class="expand" aria-hidden="true">+</span></summary>
+            <div class="project-body"><p>A personal website that brings together your interests, goals, and a little personality.</p><p class="project-brief">Try this: add your own photo, write a short introduction, and share your finished page.</p><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="text-link" href="#about">Explore this page ↑</a></div>
+          </details>
+          <details class="project">
+            <summary><span><span class="project-kind">02 / Everyday tool</span><strong>A tiny habit tracker</strong></span><span class="expand" aria-hidden="true">+</span></summary>
+            <div class="project-body"><p>A simple space to check off daily habits and see small steps add up.</p><p class="project-brief">Try this: start with three habits, add a reset button, and save progress in the browser.</p><div class="chips"><span>Forms</span><span>Local storage</span></div></div>
+          </details>
+          <details class="project">
+            <summary><span><span class="project-kind">03 / Creative</span><strong>Little moments, collected</strong></span><span class="expand" aria-hidden="true">+</span></summary>
+            <div class="project-body"><p>A quiet photo journal for the places, colors, and everyday details you want to remember.</p><p class="project-brief">Try this: choose six photos, write a caption for each, and arrange them in a responsive gallery.</p><div class="chips"><span>Photography</span><span>CSS Grid</span></div></div>
+          </details>
+        </div>
+      </section>
+      <section class="content" id="journey" aria-labelledby="journey-heading">
+        <h2 class="section-label" id="journey-heading"><span>06</span>A learning path</h2>
+        <div>
+          <p class="helper">A suggested route from first idea to first launch.</p>
+          <ol class="journey">
+            <li><span class="project-kind">Start with curiosity</span><h3>Find something worth making</h3><p>Pick a small idea from your everyday life. Sketch what the page should do before writing code.</p></li>
+            <li><span class="project-kind">Learn by doing</span><h3>Build one piece at a time</h3><p>Start with the content, give it a style, then add one useful interaction.</p></li>
+            <li><span class="project-kind">Put it out there</span><h3>Share, listen, improve</h3><p>Check it on your phone, ask a friend to try it, and publish when you're ready.</p></li>
+          </ol>
+        </div>
+      </section>
+      <section class="content" id="quick-facts" aria-labelledby="facts-heading">
+        <h2 class="section-label" id="facts-heading"><span>07</span>A few little things</h2>
+        <div>
+          <p class="helper">Quick-fact prompts to personalize. Tap a question to open it.</p>
+          <details class="fact"><summary>What am I curious about right now?</summary><p>Add a topic you could happily spend an afternoon exploring.</p></details>
+          <details class="fact"><summary>What does a good day look like?</summary><p>Describe a favorite routine, a place you enjoy, or something small that makes your day.</p></details>
+          <details class="fact"><summary>What would I love to make next?</summary><p>Share an idea you want to bring to life, even if you're still figuring out how.</p></details>
+        </div>
+      </section>
       <section class="content" id="contact" aria-labelledby="contact-heading">
-        <h2 class="section-label" id="contact-heading"><span>04</span>Get in touch</h2>
+        <h2 class="section-label" id="contact-heading"><span>08</span>Get in touch</h2>
         <div>
           <p class="contact-title">Good things start with hello.</p>
-          <p class="contact-copy">Have an idea, a recommendation, or just want to chat?</p><!-- Replace the email in BOTH the link and displayed text. --><a class="email" href="mailto:babantalouvenedict@gmail.com">babantalouvenedict@gmail.com<span aria-hidden="true">↗</span></a>
+          <p class="contact-copy">Have an idea, a recommendation, or just want to chat?</p><!-- Replace the email in BOTH the link and displayed text. --><a class="email" href="mailto:babantalouvenedict@gmail.com">babantalouvenedict@gmail.com <span aria-hidden="true">↗</span></a>
           <button class="small-button" id="copy-email" type="button">Copy email</button>
           <p class="helper" id="copy-status" role="status"></p>
         </div>
