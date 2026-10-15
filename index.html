@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal corner of the internet. My interests, what I'm learning, and how to reach me.">
+  <meta name="color-scheme" content="dark light">
+  <title>Lou Venedict — Personal space</title>
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header>
+      <!-- Your initials -->
+      <a class="brand" href="#" aria-label="Home">lv<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a class="optional" href="#about">About</a>
+        <a href="#contact">Say hello ↗</a>
+        <button class="theme" id="theme-toggle" type="button" aria-label="Switch to light mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
+          </svg>
+          <span id="theme-label">Light</span>
+        </button>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="hero">
+        <div>
+          <p class="eyebrow"><span class="dot"></span>A personal corner of the internet</p>
+          <h1>Hi, I'm<br><em>Lou Venedict.</em></h1>
+          <p class="intro">A curious mind, learning by making.<br>I like simple things and thoughtful details.</p>
+          <a class="hero-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="portrait-wrap" aria-hidden="true">
+          <div class="portrait"><span class="initials">LV</span></div>
+          <p class="portrait-note">always a work in progress.</p>
+        </div>
+      </div>
+      <!-- Sample copy below: personalize it to tell your own story. -->
+      <section class="content" id="about" aria-labelledby="about-heading">
+        <h2 class="section-label" id="about-heading"><span>01</span>About me</h2>
+        <div>
+          <p class="about-copy">I'm a student exploring the space between creativity and technology. This is where I share a little of who I am, what I enjoy, and what I'm learning along the way.</p>
+          <div class="details"><span>Based in Your City</span><span>Currently learning web development</span></div>
+        </div>
+      </section>
+      <section class="content" aria-labelledby="interests-heading">
+        <h2 class="section-label" id="interests-heading"><span>02</span>Off the screen</h2>
+        <div>
+          <div class="filters" role="group" aria-label="Filter hobbies">
+            <button type="button" data-filter="all" aria-pressed="true">All interests</button>
+            <button type="button" data-filter="relax" aria-pressed="false">Unwind</button>
+            <button type="button" data-filter="create" aria-pressed="false">Create</button>
+          </div>
+          <div class="interests">
+            <div class="interest" data-category="relax"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+                <path d="M3 4h6l3 2 3-2h6v15h-6l-3 2-3-2H3zM12 6v15" />
+              </svg>
+              <h3>Reading</h3>
+              <p>Getting lost in a good story and finding a new perspective.</p>
+            </div>
+            <div class="interest" data-category="relax"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+                <path d="M9 18V5l11-2v13M9 8l11-2" />
+                <ellipse cx="6" cy="18" rx="3" ry="2.5" />
+                <ellipse cx="17" cy="16" rx="3" ry="2.5" />
+              </svg>
+              <h3>Music</h3>
+              <p>Making playlists for slow mornings and late-night ideas.</p>
+            </div>
+            <div class="interest" data-category="create"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+                <path d="M3 7h5l2-3h4l2 3h5v13H3z" />
+                <circle cx="12" cy="13" r="4" />
+              </svg>
+              <h3>Photography</h3>
+              <p>Noticing the little moments that are easy to walk past.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content" aria-labelledby="goals-heading">
+        <h2 class="section-label" id="goals-heading"><span>03</span>What's next</h2>
+        <div>
+          <p class="helper">Your own little checklist. Try checking off a goal.</p>
+                      <label class="goal"><input type="checkbox" data-goal="website"><span class="goal-title">Build my first personal website</span><span class="tag">To do</span></label>
+                      <label class="goal"><input type="checkbox" data-goal="javascript"><span class="goal-title">Get comfortable with JavaScript</span><span class="tag">To do</span></label>
+                      <label class="goal"><input type="checkbox" data-goal="share"><span class="goal-title">Make something worth sharing</span><span class="tag">To do</span></label>
+                    <progress id="goal-progress" max="3" value="0" aria-label="Completed goals"></progress>
+          <p class="helper" id="goal-summary" aria-live="polite"></p>
+          <p class="helper" id="save-note">Progress is saved only in this browser.</p>
+          <button type="button" class="small-button" id="reset-goals">Reset checklist</button>
+        </div>
+      </section>
+      <section class="content" id="contact" aria-labelledby="contact-heading">
+        <h2 class="section-label" id="contact-heading"><span>04</span>Get in touch</h2>
+        <div>
+          <p class="contact-title">Good things start with hello.</p>
+          <p class="contact-copy">Have an idea, a recommendation, or just want to chat?</p><!-- Replace the email in BOTH the link and displayed text. --><a class="email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+          <button class="small-button" id="copy-email" type="button">Copy email</button>
+          <p class="helper" id="copy-status" role="status"></p>
+        </div>
+      </section>
+    </main>
+    <footer><span>© <span id="year">2026</span> Lou Venedict</span><span>Made with curiosity. Kept simple.</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
